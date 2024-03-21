@@ -86,4 +86,3 @@ const employeeTracker = async () => {
         console.error('Error:', error);
     }
 };
-

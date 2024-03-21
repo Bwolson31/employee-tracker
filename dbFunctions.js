@@ -28,7 +28,7 @@ function addEmployee(firstName, lastName, roleId, managerId) {
             (err, result) => {
                 const fullName = `${firstName} ${lastName}`;
                 if (err) reject(err);
-                console.log(`Added ${fullName} to the databse.`);
+                console.log(`Added ${fullName} to the database.`);
                 resolve();
             }
         );

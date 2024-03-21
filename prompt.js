@@ -186,4 +186,3 @@ const promptUpdateEmployeeRole = async () => {
 
 
 module.exports = startMenu;
-
