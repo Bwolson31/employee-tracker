@@ -148,7 +148,6 @@ const promptAddEmployee = async () => {
         ]);
         await addEmployee(employeeInfo.firstName, employeeInfo.lastName, employeeInfo.roleId, employeeInfo.managerId);
 
-        console.log('Employee added successfully.');
     } catch (error) {
         console.error('Error adding employee:', error);
     }
@@ -156,7 +155,6 @@ const promptAddEmployee = async () => {
 
 const promptUpdateEmployeeRole = async () => {
     try {
-        console.log('Inside promptUpdateEmployeeRole')
         // Prompt the user to input the employee's ID and the new role ID
         const userInput = await inquirer.prompt([
             {
@@ -170,11 +168,9 @@ const promptUpdateEmployeeRole = async () => {
                 message: "Enter the new role ID for the employee:"
             }
         ]);
-        console.log('User input:', userInput); 
 
         const { employeeId, newRoleId } = userInput;
 
-        console.log('Employee ID:', employeeId, 'New Role ID:', newRoleId)
 
         await updateEmployeeRole(employeeId, newRoleId);
 
